@@ -1,10 +1,11 @@
 {
   "name": "detox-server",
   "description": "Websocket proxy server for detox",
+  "private": true,
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "version": "7.0.0",
+  "version": "8.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/wix/detox.git"
