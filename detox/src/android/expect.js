@@ -158,14 +158,27 @@ class WaitForActionInteraction extends Interaction {
     this._originalMatcher = matcher;
     this._searchMatcher = searchMatcher;
   }
-  async _execute(searchAction) {
+  async _execute(searchAction, atIndex) {
     //if (!searchAction instanceof Action) throw new Error(`WaitForActionInteraction _execute argument must be a valid Action, got ${typeof searchAction}`);
-    this._call = invoke.call(invoke.Android.Class(DetoxAssertion), 'waitForAssertMatcherWithSearchAction',
+    if(atIndex){
+      // adding the ability to search for a scroll view at an index for android 
+      // this issue seems similar to https://github.com/wix/detox/pull/458 only it affects android only.
+      // this issue is preventing resolution agnostic testing
+      // the below fix allows you to supply an index for the matcher
+      const matcher = this._searchMatcher
+      this._searchMatcher._call = invoke.call(invoke.Android.Class(DetoxMatcher), 'matcherForAtIndex', invoke.Android.Integer(atIndex), matcher._call)
+      //this._searchMatcher = new Element(this._searchMatcher).atIndex(atIndex)
+      this._call = invoke.call(invoke.Android.Class(DetoxAssertion), 'waitForAssertMatcherWithSearchAction',
       this._element._call, this._originalMatcher._call, searchAction._call, this._searchMatcher._call);
+    }else{
+      this._call = invoke.call(invoke.Android.Class(DetoxAssertion), 'waitForAssertMatcherWithSearchAction',
+      this._element._call, this._originalMatcher._call, searchAction._call, this._searchMatcher._call);
+    }
+
     await this.execute();
   }
-  async scroll(amount, direction = 'down') {
-    await this._execute(new ScrollAmountAction(direction, amount));
+  async scroll(amount, direction = 'down', atIndex) {
+    await this._execute(new ScrollAmountAction(direction, amount), atIndex);
   }
 }
 
@@ -208,7 +221,7 @@ class Element {
   }
   async scroll(amount, direction = 'down') {
     // override the user's element selection with an extended matcher that looks for UIScrollView children
-    // this._selectElementWithMatcher(this._originalMatcher._extendToDescendantScrollViews());
+    //this._selectElementWithMatcher(this._originalMatcher._extendToDescendantScrollViews());
     return await new ActionInteraction(this, new ScrollAmountAction(direction, amount)).execute();
   }
   async scrollTo(edge) {
