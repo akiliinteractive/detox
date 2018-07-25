@@ -5,7 +5,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "version": "8.0.3",
+  "version": "7.3.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/akiliinteractive/detox.git"

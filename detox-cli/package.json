@@ -1,6 +1,6 @@
 {
   "name": "detox-cli",
-  "version": "8.0.3",
+  "version": "7.3.3",
   "private": true,
   "description": "detox CLI tool wrapper",
   "main": "index.js",
