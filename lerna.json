@@ -20,5 +20,7 @@
     }
   },
   "version": "7.3.5",
-  "npmClient": "npm"
+  "npmClient": "yarn",
+  "npmClientArgs": ["--production", "--no-optional"],
+  "useWorkspaces": true
 }
