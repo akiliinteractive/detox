@@ -8,7 +8,7 @@
   "version": "8.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/detox.git"
+    "url": "https://github.com/akiliinteractive/detox.git"
   },
   "bin": {
     "detox-server": "src/cli.js"

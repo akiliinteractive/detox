@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wix/detox.git"
+    "url": "git+https://github.com/akiliinteractive/detox.git"
   },
   "keywords": [
     "detox",
