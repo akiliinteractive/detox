@@ -1,6 +1,5 @@
 {
   "name": "detox",
-  "private": true,
   "description": "E2E tests and automation for mobile",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
