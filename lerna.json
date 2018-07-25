@@ -10,6 +10,10 @@
   "commands": {
     "publish": {
       "ignore": [
+        "demo-react-native-jest",
+        "detox-demo-native-android",
+        "detox-demo-native-ios",
+        "detox-demo-react-native",
         "detox-test",
         "generation"
       ]
