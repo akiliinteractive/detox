@@ -1,10 +1,11 @@
 {
   "name": "detox",
+  "private": true,
   "description": "E2E tests and automation for mobile",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "version": "7.3.7",
+  "version": "7.3.8",
   "bin": {
     "detox": "local-cli/detox.js"
   },
