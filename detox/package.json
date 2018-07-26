@@ -5,13 +5,13 @@
   "publishConfig": {
     "registry": "https://github.com/akiliinteractive/detox#master"
   },
-  "version": "7.3.9",
+  "version": "7.3.10",
   "bin": {
     "detox": "local-cli/detox.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiliinteractive/detox#master"
+    "url": "https://github.com/akiliinteractive/detox#master"
   },
   "nativePackage": true,
   "bugs": {

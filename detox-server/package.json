@@ -5,10 +5,10 @@
   "publishConfig": {
     "registry": "git+https://github.com/akiliinteractive/detox#master"
   },
-  "version": "7.3.9",
+  "version": "7.3.10",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiliinteractive/detox#master"
+    "url": "https://github.com/akiliinteractive/detox#master"
   },
   "bin": {
     "detox-server": "src/cli.js"
