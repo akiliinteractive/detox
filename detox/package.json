@@ -5,7 +5,7 @@
   "publishConfig": {
     "registry": "https://github.com/akiliinteractive/detox#master"
   },
-  "version": "7.3.8",
+  "version": "7.3.9",
   "bin": {
     "detox": "local-cli/detox.js"
   },
