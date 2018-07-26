@@ -3,12 +3,12 @@
   "description": "Websocket proxy server for detox",
   "private": true,
   "publishConfig": {
-    "registry": "git+https://github.com/akiliinteractive/detox#v7.3.8"
+    "registry": "git+https://github.com/akiliinteractive/detox#master"
   },
-  "version": "7.3.5",
+  "version": "7.3.8",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiliinteractive/detox#v7.3.8"
+    "url": "git+https://github.com/akiliinteractive/detox#master"
   },
   "bin": {
     "detox-server": "src/cli.js"

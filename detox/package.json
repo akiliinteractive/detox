@@ -3,7 +3,7 @@
   "private": true,
   "description": "E2E tests and automation for mobile",
   "publishConfig": {
-    "registry": "https://github.com/akiliinteractive/detox#v7.3.8"
+    "registry": "https://github.com/akiliinteractive/detox#master"
   },
   "version": "7.3.8",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiliinteractive/detox#v7.3.8"
+    "url": "git+https://github.com/akiliinteractive/detox#master"
   },
   "nativePackage": true,
   "bugs": {
@@ -41,7 +41,7 @@
   "dependencies": {
     "child-process-promise": "^2.2.0",
     "commander": "^2.15.1",
-    "detox-server": "^7.3.7",
+    "detox-server": "7.0.0",
     "fs-extra": "^4.0.2",
     "get-port": "^2.1.0",
     "ini": "^1.3.4",

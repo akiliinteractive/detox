@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiliinteractive/detox#v7.3.8"
+    "url": "git+https://github.com/akiliinteractive/detox#master"
   },
   "keywords": [
     "detox",
